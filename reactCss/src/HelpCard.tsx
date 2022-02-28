@@ -12,14 +12,12 @@ const Help = (helpHeading: HelpCardProp) => {
   const { heading, titleNumber, description } = helpHeading;
   return (
     <div className="flex flex-row ">
-      <h2 className="italic font-medium text-body text-9xl px-4 pl-10 text-outline text-slate-50">
+      <h2 className="italic font-medium text-9xl px-5 pl-9 text-outline text-slate-50">
         {titleNumber}
       </h2>
       <div className="p-11 mt-2">
-        <h3 className="text-2xl text-header pb-3">{heading}</h3>
-        <p className="font-medium text-secondary text-sm leading-normal">
-          {description}
-        </p>
+        <h3 className="text-2xl pb-3">{heading}</h3>
+        <p className="font-medium text-sm leading-normal">{description}</p>
       </div>
     </div>
   );
