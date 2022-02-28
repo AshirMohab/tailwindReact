@@ -9,7 +9,7 @@ function App() {
     >
       <div
         id="Header"
-        className="mb-6 flex flex-wrap items-center justify-center xl:justify-end"
+        className="my-6 flex flex-wrap items-center justify-center xl:justify-end"
       >
         <div className="font-bold text-3xl ml-4 justify-center xl:flex-auto xl:justify-start min-w-[100px]">
           <div className="w-2 h-2 rounded-full bg-slate-50"></div>
