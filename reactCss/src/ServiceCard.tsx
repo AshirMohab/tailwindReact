@@ -10,7 +10,7 @@ const Service = (serviceHeading: ServiceHeadProp) => {
   const { heading, description } = serviceHeading;
   return (
     <div className="flex flex-col shadow rounded-2xl p-8 mb-4 bg-white">
-      <div className="p-5 justify-center">
+      <div className="justify-center">
         <img
           src="./images/setting.png"
           alt=""
