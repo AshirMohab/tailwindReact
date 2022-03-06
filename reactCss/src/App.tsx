@@ -1,6 +1,7 @@
 import { ServiceCard } from "./ServiceCard";
 import { Header } from "./Header";
 import { HelpCard } from "./HelpCard";
+import { HandlingCard } from "./Handling";
 function App() {
   return (
     <div
@@ -64,6 +65,46 @@ function App() {
               "A.I Systems",
               "Web & App Development",
               "I.T Consultations",
+            ]}
+          />
+        </div>
+      </div>
+      <div id="Handling" className="h-[100%] m-6 px-4 bg-slate-100">
+        <div className="grid md:grid-cols-2">
+          <div className="flex flex-col mb-16 justify-between font-bold">
+            <HandlingCard />
+          </div>
+          <div
+            id="idea-picture"
+            className="flex items-center justify-center lg:items-end lg:justify-start px-4 m-10"
+          >
+            <img
+              src="./images/idea.jpg"
+              className="rounded-xl mb-6"
+              width="400px"
+              height="400px"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="Services" className="bg-slate-50">
+        <div id="ServicesHeader" className=" m-20">
+          <h3 className="font-medium text-sm text-center pt-2 text-blue-300">
+            FROM THE BLOG
+          </h3>
+          <h1 className="flex mt-36 font-bold text-[40px] text-header text-center justify-center border-y-2">
+            Recent news from the blog
+          </h1>
+          <p className="font-medium text-sm text-center pt-2">
+            The point of using Lorem Ipsum is that it has.
+          </p>
+        </div>
+        <div className="p-10">
+          <ServiceCard
+            serviceHeadings={[
+              "Lorum Ipsum dolor sit amer iur",
+              "Lorum Ipsum dolor sit amer iur",
+              "Lorum Ipsum dolor sit amer iur",
             ]}
           />
         </div>
