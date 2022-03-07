@@ -2,6 +2,7 @@ import { ServiceCard } from "./ServiceCard";
 import { Header } from "./Header";
 import { HelpCard } from "./HelpCard";
 import { HandlingCard } from "./Handling";
+import { BlogCard } from "./Blog";
 function App() {
   return (
     <div
@@ -92,7 +93,7 @@ function App() {
           <h3 className="font-medium text-sm text-center pt-2 text-blue-300">
             FROM THE BLOG
           </h3>
-          <h1 className="flex mt-36 font-bold text-[40px] text-header text-center justify-center border-y-2">
+          <h1 className="flex mt-1 font-bold text-[40px] text-header text-center justify-center border-y-2">
             Recent news from the blog
           </h1>
           <p className="font-medium text-sm text-center pt-2">
@@ -100,8 +101,8 @@ function App() {
           </p>
         </div>
         <div className="p-10">
-          <ServiceCard
-            serviceHeadings={[
+          <BlogCard
+            blogHeadings={[
               "Lorum Ipsum dolor sit amer iur",
               "Lorum Ipsum dolor sit amer iur",
               "Lorum Ipsum dolor sit amer iur",
