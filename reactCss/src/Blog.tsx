@@ -30,7 +30,7 @@ const Blog = (blogHeading: BlogHeadProp) => {
 export function BlogCard(headings: BlogCardProp) {
   const { blogHeadings } = headings;
   return (
-    <div className="md:grid md:grid-cols-3 gap-16 md:grid-rows-1 m-4 justify-center">
+    <div className="md:grid md:grid-cols-3 gap-16 md:grid-rows-1 m-8 justify-center">
       {blogHeadings.map((blogHeading, index) => (
         <Blog
           heading={blogHeading}

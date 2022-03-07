@@ -68,6 +68,14 @@ function App() {
               "Web & App Development",
               "I.T Consultations",
             ]}
+            colours={[
+              "bg-red-500",
+              "bg-blue-300",
+              "bg-pink-300",
+              "bg-indigo-300",
+              "bg-orange-200",
+              "bg-slate-200",
+            ]}
           />
         </div>
       </div>

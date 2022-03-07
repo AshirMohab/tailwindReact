@@ -3,16 +3,16 @@ export default function ReachYou() {
     <div>
       <div id="GetToKownYou" className="relative h-0 top-6 ml-auto mr-2 z-50">
         <div>
-          <h1 className="flex mt-1 font-bold text-[40px] text-header text-center justify-center">
+          <h1 className="flex mt-1 font-bold text-[40px] text-header text-center justify-center p-12">
             Get to know how we reaches you
           </h1>
-          <h3 className="font-medium text-sm text-center pt-2 text-black">
+          <h3 className="font-medium text-sm text-center pt-8 text-black">
             It is a long establiblished fact that the reader will get distracted
             by the readable.
           </h3>
         </div>
-        <div className="text-center pb-10">
-          <button className="rounded-full border-2 px-6 py-3 font-medium text-sm text-body hover:text-button hover:bg-slate-200">
+        <div className="text-center py-10">
+          <button className="rounded-full border-2 px-6 py-3 font-medium text-sm text-white hover:text-button hover:bg-slate-700">
             Learn Team
           </button>
         </div>

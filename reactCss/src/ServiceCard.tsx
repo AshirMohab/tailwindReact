@@ -1,13 +1,15 @@
 export type ServiceCardProp = {
   serviceHeadings: string[];
+  colours: string[];
 };
 
 export type ServiceHeadProp = {
   heading: string;
   description: string;
+  colour: string;
 };
 const Service = (serviceHeading: ServiceHeadProp) => {
-  const { heading, description } = serviceHeading;
+  const { heading, description, colour } = serviceHeading;
   return (
     <div className="flex flex-col shadow rounded-2xl p-8 mb-4 bg-white">
       <div className="justify-center">
@@ -16,7 +18,7 @@ const Service = (serviceHeading: ServiceHeadProp) => {
           alt=""
           width="50px"
           height="50px"
-          className="bg-indigo-300 rounded-full p-2"
+          className={`${colour} rounded-full p-2`}
         />
       </div>
       <h5 className="text-sm font-bold m-2">{heading}</h5>
@@ -26,15 +28,16 @@ const Service = (serviceHeading: ServiceHeadProp) => {
 };
 
 export function ServiceCard(headings: ServiceCardProp) {
-  const { serviceHeadings } = headings;
+  const { serviceHeadings, colours } = headings;
   return (
     <div className="md:grid md:grid-cols-3 gap-16 md:grid-rows-2 m-4 justify-center">
-      {serviceHeadings.map((serviceHeading) => (
+      {serviceHeadings.map((serviceHeading, index) => (
         <Service
           heading={serviceHeading}
           key={serviceHeading}
           description="It is a long established fact that the reader will be distracted by new
         readable content"
+          colour={colours[index]}
         />
       ))}
     </div>
