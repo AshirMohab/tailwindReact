@@ -76,6 +76,14 @@ function App() {
               "bg-orange-200",
               "bg-slate-200",
             ]}
+            images={[
+              "./images/apple-pear.png",
+              "./images/apple.png",
+              "./images/fruits.png",
+              "./images/harvest.png",
+              "./images/lemon.png",
+              "./images/setting.png",
+            ]}
           />
         </div>
       </div>
@@ -116,6 +124,7 @@ function App() {
               "Lorum Ipsum dolor sit amer iur",
               "Lorum Ipsum dolor sit amer iur",
             ]}
+            categories={["Technology", "Swimming", "Juice"]}
           />
         </div>
       </div>

@@ -1,17 +1,19 @@
 export type BlogCardProp = {
   blogHeadings: string[];
+  categories: string[];
 };
 
 export type BlogHeadProp = {
   heading: string;
   description: string;
+  category: string;
 };
 const Blog = (blogHeading: BlogHeadProp) => {
-  const { heading, description } = blogHeading;
+  const { heading, description, category } = blogHeading;
   return (
     <div className="flex flex-col shadow rounded-2xl mb-4 bg-white overflow-hidden">
       <div className="relative h-0 top-6 ml-auto mr-2 rounded-full bg-slate-50/60 z-auto">
-        Stuff
+        {category}
       </div>
       <div className="overflow-hidden object-cover h-48">
         <img src="./images/idea.jpg" alt="" className="rounded-t-2xl -mt-20" />
@@ -28,7 +30,7 @@ const Blog = (blogHeading: BlogHeadProp) => {
 };
 
 export function BlogCard(headings: BlogCardProp) {
-  const { blogHeadings } = headings;
+  const { blogHeadings, categories } = headings;
   return (
     <div className="md:grid md:grid-cols-3 gap-16 md:grid-rows-1 m-8 justify-center">
       {blogHeadings.map((blogHeading, index) => (
@@ -37,6 +39,7 @@ export function BlogCard(headings: BlogCardProp) {
           key={blogHeading + index}
           description="It is a long established fact that the reader will be distracted by new
           readable content"
+          category={categories[index]}
         />
       ))}
     </div>
