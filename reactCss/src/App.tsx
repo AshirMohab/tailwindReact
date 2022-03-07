@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { HelpCard } from "./HelpCard";
 import { HandlingCard } from "./Handling";
 import { BlogCard } from "./Blog";
+import ReachYou from "./ReachYou";
 function App() {
   return (
     <div
@@ -88,8 +89,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="Services" className="bg-slate-50">
-        <div id="ServicesHeader" className=" m-20">
+      <div id="Blog" className="bg-slate-50 pb-20">
+        <div id="BlogHeaders" className=" m-20 pb-10">
           <h3 className="font-medium text-sm text-center pt-2 text-blue-300">
             FROM THE BLOG
           </h3>
@@ -100,7 +101,7 @@ function App() {
             The point of using Lorem Ipsum is that it has.
           </p>
         </div>
-        <div className="p-10">
+        <div>
           <BlogCard
             blogHeadings={[
               "Lorum Ipsum dolor sit amer iur",
@@ -109,6 +110,9 @@ function App() {
             ]}
           />
         </div>
+      </div>
+      <div>
+        <ReachYou />
       </div>
     </div>
   );

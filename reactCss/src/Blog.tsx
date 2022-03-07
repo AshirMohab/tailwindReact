@@ -9,18 +9,20 @@ export type BlogHeadProp = {
 const Blog = (blogHeading: BlogHeadProp) => {
   const { heading, description } = blogHeading;
   return (
-    <div className="flex flex-col shadow rounded-2xl p-8 mb-4 bg-white">
-      <div className="overflow-hidden object-cover h-48">
-        <img
-          src="./images/idea.jpg"
-          alt=""
-          width="110px"
-          height="200px"
-          className="rounded-t-2xl p-2"
-        />
+    <div className="flex flex-col shadow rounded-2xl mb-4 bg-white overflow-hidden">
+      <div className="relative h-0 top-6 ml-auto mr-2 rounded-full bg-slate-50/60 z-auto">
+        Stuff
       </div>
-      <h5 className="text-sm font-bold m-2">{heading}</h5>
-      <p className="m-3">{description}</p>
+      <div className="overflow-hidden object-cover h-48">
+        <img src="./images/idea.jpg" alt="" className="rounded-t-2xl -mt-20" />
+      </div>
+      <div>
+        <h5 className="text-sm font-bold m-2">{heading}</h5>
+        <p className="m-3">{description}</p>
+        <div className="text-xs font-medium text-right pb-3 text-header cursor-pointer hover:text-blue-400">
+          Read more
+        </div>
+      </div>
     </div>
   );
 };
